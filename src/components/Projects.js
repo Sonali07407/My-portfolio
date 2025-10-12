@@ -9,8 +9,8 @@ const Projects = () => {
       description: "A full-stack website with user authentication...and many more.",
       image: "/images/project1.jpg",
       technologies: ["React", "Node.js", "MongoDB"],
-      github: "https://github.com/yourusername/ecommerce",
-      demo: "https://ecommerce-demo.com"
+      github: "#",
+      demo: "#"
     },
     {
       id: 2,
@@ -18,8 +18,8 @@ const Projects = () => {
       description: "Content- Based Filtering. Recommends Skills Similar to the ones the user already has",
       image: "/images/project2.jpg",
       technologies: ["React", "Firebase"],
-      github: "https://github.com/yourusername/task-app",
-      demo: "https://task-app-demo.com"
+      github: "#",
+      demo: "#S"
     },
     {
       id: 3,
