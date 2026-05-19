@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     // 2. Add class names
     <section id="hero" className="hero">
-      <h1 className="hero-title">Aniket Gujar</h1>
+      <h1 className="hero-title">Sonali Surwade</h1>
       <p className="hero-subtitle">I create beautiful, responsive websites and web applications using modern technologies...</p>
       <a href="#projects" className="hero-button">View My Work</a>
     </section>

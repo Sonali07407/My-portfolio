@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <a href="/" className="navbar-logo">
-        Aniket Gujar
+        Sonali Surwade
       </a>
       <ul className="navbar-links">
         <li><a href="#about">About</a></li>
@@ -14,8 +14,8 @@ const Navbar = () => {
         <li><a href="#contact">Contact</a></li>
         <li>
           <a
-            href="my-portfolio/Aniket-Gujar.pdf"
-            target="my-portfolio/Aniket-Gujar.pdf"
+            href="/Sonali-Surwade-Resume.pdf"
+            target="_blank"
             rel="noopener noreferrer"
             className="navbar-resume-button"
           >
