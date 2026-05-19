@@ -1,99 +1,52 @@
-.navbar {
-  background-color: #ffffff;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 1000;
-  transition: all 0.3s ease;
-}
+/* src/components/Navbar.css */
 
-.nav-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 70px;
+  background-color: #2c3e50; /* A dark, modern blue-gray */
+  padding: 1rem 5%; /* Use percentages for responsive padding */
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.nav-logo h2 {
-  color: #3498db;
+.navbar-logo {
+  color: #ecf0f1; /* A light gray, easy on the eyes */
+  text-decoration: none;
   font-size: 1.5rem;
-  font-weight: 600;
+  font-weight: 700;
 }
 
-.nav-menu {
-  display: flex;
+.navbar-links {
   list-style: none;
-  gap: 30px;
+  display: flex;
+  gap: 2rem; /* Creates space between the links */
   margin: 0;
   padding: 0;
 }
 
-.nav-item a {
+.navbar-links li a {
+  color: #ecf0f1;
   text-decoration: none;
-  color: #333;
   font-size: 1rem;
   font-weight: 500;
-  transition: color 0.3s ease;
-  position: relative;
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
 }
 
-.nav-item a:hover {
-  color: #3498db;
+.navbar-links li a:hover {
+  color:  #ea6e1b; /* A bright blue for hover */
 }
 
-.nav-item a::after {
-  content: '';
-  position: absolute;
-  bottom: -5px;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background-color: #3498db;
-  transition: width 0.3s ease;
+.navbar-resume-button {
+  background-color:  #ea6e1b;
+  color: #fff !important; /* Use !important to override other link styles if needed */
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
-.nav-item a:hover::after {
-  width: 100%;
-}
-
-.nav-toggle {
-  display: none;
-  font-size: 1.5rem;
-  color: #333;
-  cursor: pointer;
-}
-
-/* Mobile Responsive */
-@media (max-width: 768px) {
-  .nav-menu {
-    position: fixed;
-    top: 70px;
-    right: -100%;
-    width: 70%;
-    height: calc(100vh - 70px);
-    background-color: #ffffff;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    padding-top: 50px;
-    transition: right 0.3s ease;
-    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
-  }
-
-  .nav-menu.active {
-    right: 0;
-  }
-
-  .nav-toggle {
-    display: block;
-  }
-
-  .nav-item a {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-  }
+.navbar-resume-button:hover {
+  background-color: #ea6e1b; /* A darker blue on hover */
 }

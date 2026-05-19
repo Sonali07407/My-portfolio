@@ -1,87 +1,41 @@
+/* src/components/Hero.css */
 .hero {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
-  padding: 120px 20px 80px;
-  max-width: 1200px;
-  margin: 0 auto;
-  gap: 40px;
-}
-
-.hero-content {
-  flex: 1;
-  min-width: 300px;
+  text-align: center;
+  min-height: 80vh; /* Make the section tall */
+  background-color: #ffffff;
+  padding: 0 5%;
 }
 
 .hero-title {
-  font-size: 3rem;
-  margin-bottom: 10px;
-  color: #2c3e50;
-  line-height: 1.2;
-}
-
-.highlight {
-  color: #3498db;
-  font-weight: 700;
+  font-size: 4rem; /* Much larger font */
+  margin-bottom: 0.5rem;
+  color: #212529;
 }
 
 .hero-subtitle {
-  font-size: 1.5rem;
-  color: #3498db;
-  margin-bottom: 20px;
-  font-weight: 600;
+  font-size: 1.25rem;
+  color: #6c757d; /* Softer color for the subtitle */
+  margin-bottom: 2rem;
+  max-width: 600px; /* Prevents the subtitle from being too wide */
 }
 
-.hero-description {
-  font-size: 1.1rem;
-  color: #7f8c8d;
-  margin-bottom: 30px;
-  line-height: 1.6;
+.hero-button {
+  background-color: #ea6e1b;
+  color: white;
+  padding: 0.8rem 2rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none; /* Remove underline */
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.hero-buttons {
-  display: flex;
-  gap: 15px;
-  flex-wrap: wrap;
-}
-
-.hero-image {
-  flex: 1;
-  min-width: 300px;
-  text-align: center;
-}
-
-.hero-image img {
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 5px solid #3498db;
-  box-shadow: 0 10px 30px rgba(52, 152, 219, 0.3);
-  transition: transform 0.3s ease;
-}
-
-.hero-image img:hover {
-  transform: scale(1.05);
-}
-
-@media (max-width: 768px) {
-  .hero {
-    flex-direction: column;
-    padding: 80px 20px 60px;
-    text-align: center;
-  }
-
-  .hero-content {
-    margin-bottom: 30px;
-  }
-
-  .hero-buttons {
-    justify-content: center;
-  }
-
-  .hero-image {
-    margin: 0 auto;
-  }
+.hero-button:hover {
+  background-color:  #ea6e1b;
+  transform: translateY(-2px); /* Slight lift on hover */
+  text-decoration: none;
 }
